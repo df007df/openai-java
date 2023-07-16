@@ -14,7 +14,9 @@ public class ChatFunction {
     @NonNull
     private String name;
     private String description;
-    @JsonProperty("parameters")
+
+    @JsonIgnore
+    //@JsonProperty("parameters")
     private Class<?> parametersClass;
 
     @JsonProperty("parameters")
